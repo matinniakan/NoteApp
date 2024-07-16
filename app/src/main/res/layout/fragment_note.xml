@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".ui.NoteFragment">
+
+    <!--close-->
+    <ImageView
+        android:id="@+id/closeImg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:rotation="45"
+        android:src="@drawable/ic_round_add_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--title-->
+    <EditText
+        android:id="@+id/titleEdt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_rounded_yellow_light"
+        android:fontFamily="@font/almarailight"
+        android:hint="@string/title"
+        android:maxLines="1"
+        android:padding="20dp"
+        android:textColorHint="@color/yellowDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/closeImg" />
+    <!--description-->
+    <EditText
+        android:id="@+id/descEdt"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_rounded_yellow_light"
+        android:fontFamily="@font/almarailight"
+        android:hint="@string/desc"
+        android:gravity="top"
+        android:padding="20dp"
+        android:textColorHint="@color/yellowDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleEdt" />
+    <!--content-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contentLay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_rounded_gray_light"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descEdt">
+        <!--category-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/categoryLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+            <!--title-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categories"
+                android:textSize="18sp"
+                android:textColor="@color/grayDark"
+                android:fontFamily="@font/almarailight"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/categoryCard"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <!--spinner-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/categoryCard"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_margin="3dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <Spinner
+                    android:id="@+id/categoriesSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--priority-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/priorityLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/categoryLay">
+            <!--title-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/priority"
+                android:textSize="18sp"
+                android:textColor="@color/grayDark"
+                android:fontFamily="@font/almarailight"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/priorityCard"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <!--spinner-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/priorityCard"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_margin="3dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <Spinner
+                    android:id="@+id/prioritiesSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--save-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveNote"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="@string/save"
+        android:paddingHorizontal="50dp"
+        android:fontFamily="@font/almarailight"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/green"
+        app:layout_constraintTop_toBottomOf="@id/contentLay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
