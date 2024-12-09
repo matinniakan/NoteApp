@@ -21,7 +21,6 @@
   <tr>
     <td>Home Screen</td>
     <td>Empty Screen</td>
-    <td>Another Screen</td>
   </tr>
 </table>
 
