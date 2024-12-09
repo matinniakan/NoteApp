@@ -18,10 +18,6 @@
     <td><img src="./app/src/main/assets/home-screen.png" alt="Home Screen" width="200"></td>
     <td><img src="./app/src/main/assets/empty-screen.png" alt="Empty Screen" width="200"></td>
   </tr>
-  <tr>
-    <td>Home Screen</td>
-    <td>Empty Screen</td>
-  </tr>
 </table>
 
 
