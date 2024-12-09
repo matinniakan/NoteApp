@@ -12,6 +12,6 @@
 
 ## Screenshots
 
-![Home Screen](./app/src/main/assets/home-screen.png)
-![Empty Screen](./app/src/main/assets/empty-screen.png)
+![Home Screen](./app/src/main/assets/home-screen.png) ![Empty Screen](./app/src/main/assets/empty-screen.png)
+
 
