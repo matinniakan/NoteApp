@@ -13,8 +13,8 @@
 ## Screenshots
 
 <div>
-  <img src="./assets/home-screen.png" width="200" style="display: inline-block; margin-right: 10px;"/>
-  <img src="./assets/empty-screen.png" width="200" style="display: inline-block; margin-right: 10px;"/>
+  <img src="./assets/home-screen.png" width="200" style="display: inline-block; margin-right: 10;"/>
+  <img src="./assets/empty-screen.png" width="200" style="display: inline-block; margin-right: 10;"/>
 </div>
 
 
