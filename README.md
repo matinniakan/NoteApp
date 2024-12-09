@@ -8,4 +8,10 @@
 - [Kotlin Coroutines](https://kotlinlang.org/docs/coroutines-overview.html)  
 - [Kotlin Flow](https://kotlinlang.org/docs/flow.html)  
 - [LiveData](https://developer.android.com/topic/libraries/architecture/livedata)  
-- [ViewBinding](https://developer.android.com/topic/libraries/view-binding)  
+- [ViewBinding](https://developer.android.com/topic/libraries/view-binding)
+
+## Screenshots
+
+![Home Screen](./app/src/main/assets/home-screen.png)
+![Empty Screen](./app/src/main/assets/empty-screen.png)
+
