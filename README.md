@@ -9,13 +9,22 @@
 - [Kotlin Flow](https://kotlinlang.org/docs/flow.html)  
 - [LiveData](https://developer.android.com/topic/libraries/architecture/livedata)  
 - [ViewBinding](https://developer.android.com/topic/libraries/view-binding)
+  
 
 ## Screenshots
 
-<div>
-  <img src="./assets/home-screen.png" width="200" style="display: inline-block; margin-right: 10;"/>
-  <img src="./assets/empty-screen.png" width="200" style="display: inline-block; margin-right: 10;"/>
-</div>
+<table>
+  <tr>
+    <td><img src="./app/src/main/assets/home-screen.png" alt="Home Screen" width="200"></td>
+    <td><img src="./app/src/main/assets/empty-screen.png" alt="Empty Screen" width="200"></td>
+  </tr>
+  <tr>
+    <td>Home Screen</td>
+    <td>Empty Screen</td>
+    <td>Another Screen</td>
+  </tr>
+</table>
+
 
 
 
