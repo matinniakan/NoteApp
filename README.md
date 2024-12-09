@@ -12,6 +12,9 @@
 
 ## Screenshots
 
-![Home Screen](./app/src/main/assets/home-screen.png) ![Empty Screen](./app/src/main/assets/empty-screen.png)
+<div>
+  <img src="assets/home-screen.png" width="200" style="margin-right: 10px;"/>
+  <img src="assets/empty-screen.png" width="200" style="margin-right: 10px;"/>
+</div>
 
 
